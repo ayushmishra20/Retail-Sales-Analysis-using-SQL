@@ -187,6 +187,7 @@ GROUP BY shift;
 ## 🙌 Credits & Acknowledgment
 
 This project is inspired by a public SQL learning project created by Zero Analyst (Najir H).
+
 Original repository:
 https://github.com/najirh/Retail-Sales-Analysis-SQL-Project--P1
 
