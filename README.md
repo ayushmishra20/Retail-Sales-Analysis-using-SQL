@@ -29,6 +29,8 @@ It was completed as part of my **SQL learning journey** to gain hands-on experie
 ```sql
 CREATE DATABASE p1_retail_db;
 
+USE p1_retail_db;
+
 CREATE TABLE retail_sales (
     transactions_id INT PRIMARY KEY,
     sale_date DATE,
