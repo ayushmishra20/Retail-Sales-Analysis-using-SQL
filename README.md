@@ -45,7 +45,7 @@ CREATE TABLE retail_sales (
 );
 ```
 
-##🧹 Data Cleaning & Exploration
+## 🧹 Data Cleaning & Exploration
 
 - The following checks were performed before analysis:
 - Total record count
@@ -59,7 +59,7 @@ SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 SELECT DISTINCT category FROM retail_sales;
 ```
 
-##📊 Business Analysis & SQL Queries
+## 📊 Business Analysis & SQL Queries
 1️⃣ Sales on a specific date
 ```sql
 SELECT *
@@ -167,7 +167,7 @@ FROM sales_shift
 GROUP BY shift;
 ```
 
-##🔍 Key Insights
+## 🔍 Key Insights
 
 - Sales are distributed across multiple product categories
 - Clothing and Beauty categories show strong performance
@@ -175,7 +175,7 @@ GROUP BY shift;
 - Certain months record peak sales activity
 - Evening shift records the highest number of orders
 
-##📚 Skills Practiced
+## 📚 Skills Practiced
 
 - SQL Data Cleaning
 - Aggregation & Grouping
@@ -184,7 +184,7 @@ GROUP BY shift;
 - Business-Oriented Querying
 
 
-##🙌 Credits & Acknowledgment
+## 🙌 Credits & Acknowledgment
 
 This project is inspired by a public SQL learning project created by Zero Analyst (Najir H).
 Original repository:
@@ -192,6 +192,6 @@ https://github.com/najirh/Retail-Sales-Analysis-SQL-Project--P1
 
 This version is recreated and modified by me for educational and practice purposes.
 
-##👤 Author
+## 👤 Author
 
 Ayush Mishra
