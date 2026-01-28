@@ -44,44 +44,6 @@ CREATE TABLE retail_sales (
     total_sale FLOAT
 );
 
-#🧹 Data Cleaning & Exploration
-
-The following checks were performed before analysis:
-
-Total record count
-
-Unique customer count
-
-Distinct product categories
-
-Identification and removal of null values
-
-SELECT COUNT(*) FROM retail_sales;
-SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
-SELECT DISTINCT category FROM retail_sales;
-
-
-📊 Business Analysis & SQL Queries
-1️⃣ Sales on a specific date
-SELECT *
-FROM retail_sales
-WHERE sale_date = '2022-11-05';
-
-
-2️⃣ Clothing sales with quantity ≥ 4 (Nov 2022)
-SELECT *
-FROM retail_sales
-WHERE category = 'Clothing'
-  AND TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
-  AND quantity >= 4;
-
-3️⃣ Total revenue and orders by category
-SELECT 
-    category,
-    SUM(total_sale) AS total_revenue,
-    COUNT(*) AS total_orders
-FROM retail_sales
-GROUP BY category;
 
 
 4️⃣ Average customer age (Beauty category)
