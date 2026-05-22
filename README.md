@@ -1,7 +1,7 @@
 
-# 🛒 Retail Sales Analysis using SQL
+#  Retail Sales Analysis using SQL
 
-## 📌 Project Overview
+##  Project Overview
 
 **Project Name**: Retail Sales Analysis using SQL  
 **Skill Level**: Beginner  
@@ -12,7 +12,7 @@ It was completed as part of my **SQL learning journey** to gain hands-on experie
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 - Design and create a retail sales database  
 - Clean and validate raw sales data  
@@ -22,7 +22,7 @@ It was completed as part of my **SQL learning journey** to gain hands-on experie
 
 ---
 
-## 🗄 Database Design
+##  Database Design
 
 ### Database & Table Creation
 
@@ -44,7 +44,7 @@ CREATE TABLE retail_sales (
 );
 ```
 
-## 🧹 Data Cleaning & Exploration
+##  Data Cleaning & Exploration
 
 - The following checks were performed before analysis:
 - Total record count
@@ -58,15 +58,15 @@ SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
 SELECT DISTINCT category FROM retail_sales;
 ```
 
-## 📊 Business Analysis & SQL Queries
-1️⃣ Sales on a specific date
+##  Business Analysis & SQL Queries
+1️. Sales on a specific date
 ```sql
 SELECT *
 FROM retail_sales
 WHERE sale_date = '2022-11-05';
 ```
 
-2️⃣ Clothing sales with quantity ≥ 4 (Nov 2022)
+2️. Clothing sales with quantity ≥ 4 (Nov 2022)
 ```sql
 SELECT *
 FROM retail_sales
@@ -76,7 +76,7 @@ WHERE category = 'Clothing'
 ```
 
 
-3️⃣ Total revenue and orders by category
+3️. Total revenue and orders by category
 ```sql
 SELECT 
     category,
@@ -86,21 +86,21 @@ FROM retail_sales
 GROUP BY category;
 ```
 
-4️⃣ Average customer age (Beauty category)
+4️. Average customer age (Beauty category)
 ```sql
 SELECT ROUND(AVG(age), 2) AS avg_age
 FROM retail_sales
 WHERE category = 'Beauty';
 ```
 
-5️⃣ High-value transactions (sales > 1000)
+5️. High-value transactions (sales > 1000)
 ```sql
 SELECT *
 FROM retail_sales
 WHERE total_sale > 1000;
 ```
 
-6️⃣ Transactions by gender and category
+6️. Transactions by gender and category
 ```sql
 SELECT 
     category,
@@ -111,7 +111,7 @@ GROUP BY category, gender
 ORDER BY category;
 ```
 
-7️⃣ Best-selling month of each year
+7️. Best-selling month of each year
 ```sql
 SELECT year, month, avg_sale
 FROM (
@@ -129,7 +129,7 @@ FROM (
 WHERE rank = 1;
 ```
 
-8️⃣ Top 5 customers by total sales
+8️. Top 5 customers by total sales
 ```sql
 SELECT 
     customer_id,
@@ -141,7 +141,7 @@ LIMIT 5;
 ```
 
 
-9️⃣ Unique customers per category
+9️. Unique customers per category
 ```sql
 SELECT 
     category,
@@ -150,7 +150,7 @@ FROM retail_sales
 GROUP BY category;
 ```
 
-🔟 Sales by shift (Morning / Afternoon / Evening)
+10. Sales by shift (Morning / Afternoon / Evening)
 ```sql
 WITH sales_shift AS (
     SELECT *,
@@ -166,7 +166,7 @@ FROM sales_shift
 GROUP BY shift;
 ```
 
-## 🔍 Key Insights
+##  Key Insights
 
 - Sales are distributed across multiple product categories
 - Clothing and Beauty categories show strong performance
@@ -174,7 +174,7 @@ GROUP BY shift;
 - Certain months record peak sales activity
 - Evening shift records the highest number of orders
 
-## 📚 Skills Practiced
+##  Skills Practiced
 
 - SQL Data Cleaning
 - Aggregation & Grouping
@@ -183,7 +183,7 @@ GROUP BY shift;
 - Business-Oriented Querying
 
 
-## 🙌 Credits & Acknowledgment
+##  Credits & Acknowledgment
 
 This project is inspired by a public SQL learning project created by Zero Analyst (Najir H).
 
@@ -192,6 +192,6 @@ https://github.com/najirh/Retail-Sales-Analysis-SQL-Project--P1
 
 This version is recreated and modified by me for educational and practice purposes.
 
-## 👤 Author
+##  Author
 
 Ayush Mishra
