@@ -1,8 +1,5 @@
-
 #  Retail Sales Analysis using SQL
-
 ##  Project Overview
-
 **Project Name**: Retail Sales Analysis using SQL  
 **Skill Level**: Beginner  
 **Database**: `p1_retail_db`
@@ -11,7 +8,6 @@ This project demonstrates how **SQL is used to analyze retail sales data** by pe
 It was completed as part of my **SQL learning journey** to gain hands-on experience with real-world datasets.
 
 ---
-
 ##  Objectives
 
 - Design and create a retail sales database  
@@ -21,11 +17,8 @@ It was completed as part of my **SQL learning journey** to gain hands-on experie
 - Build a portfolio-ready SQL project  
 
 ---
-
 ##  Database Design
-
 ### Database & Table Creation
-
 ```sql
 CREATE DATABASE p1_retail_db;
 
@@ -43,9 +36,7 @@ CREATE TABLE retail_sales (
     total_sale FLOAT
 );
 ```
-
 ##  Data Cleaning & Exploration
-
 - The following checks were performed before analysis:
 - Total record count
 - Unique customer count
